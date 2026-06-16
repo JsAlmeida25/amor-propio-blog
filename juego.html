@@ -13,6 +13,7 @@
         <h1 class="logo">
         <img src="corazon_vector.svg" alt="Corazon">
        </h1> 
+        <button class="menu-btn">☰</button>
 
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -113,13 +114,23 @@
      </ul> 
     </div>
      </section>
-     <div class="imagen-lado">
+     <div class="imagen-juego">
         <img src="niños.png" alt="imag">
      </div>
 
 </div>
    
 </main> 
+
+    <script>
+    const boton = document.querySelector('.menu-btn');
+    const menu = document.querySelector('nav ul');
+
+    boton.addEventListener('click', () => {
+        menu.classList.toggle('activo');
+    });
+    </script>
+
 
 </body>
 </html>
