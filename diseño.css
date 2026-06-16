@@ -6,6 +6,9 @@ body{
     padding-top: 70px;
 }
 /* Menu*/
+.menu-btn{
+    display: none;
+}
 header{
     background-color: rgb(209, 120, 135);
     position: fixed;
@@ -372,17 +375,16 @@ h3{
     width: 65%;
 }
 
-.imagen-lado{
+.imagen-juego{
     width: 30%;
     display: flex;
     justify-content: center;
 }
 
-.imagen-lado img{
+.imagen-juego img{
     width: 450px;
     position: fixed;
 }
-
 /* ========================= */
 /* RESPONSIVE PARA CELULARES */
 /* ========================= */
@@ -523,6 +525,17 @@ h3{
         position: static;
     }
 
+    .imagen-juego{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.imagen-juego img{
+    position: static;
+    width: 250px;
+    max-width: 80%;
+}
+
     .faq-item{
         height: auto;
         padding: 15px;
@@ -559,6 +572,15 @@ h3{
     .frase-final p{
         font-size: 22px;
     }
+}
+
+  .menu-btn{
+    display: block;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* Imágenes responsivas */
